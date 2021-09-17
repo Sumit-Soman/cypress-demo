@@ -1,0 +1,24 @@
+{
+    "baseUrl": "http://angularjs.realworld.io/#",
+    "numTestsKeptInMemory": 25,
+    "defaultCommandTimeout": 10000,
+    "experimentalFetchPolyfill": true,
+    "viewportWidth": 1280,
+    "viewportHeight": 800,
+    "env": {
+        "apiUrl": "https://conduit.productionready.io/api",
+        "email": "abc456@test.com",
+        "password": "Cypress123",
+        "device": "desktop",
+        "allure": true
+    },
+    "retries":{
+        "runMode": 1,
+        "openMode": 0
+    },
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "results/cypress-report.[hash].xml",
+      "toConsole": true
+    }
+}
