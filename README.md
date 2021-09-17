@@ -11,14 +11,15 @@
 ## Setup
 
 1. `git clone `
-2. move to `cypress-demo` folder 
-3. run `npm install` or `npm i`
+2. `cd cypress-demo`  
+3. `npm install` or `npm i`
 
 
 ## Tests execution
 
 - Open Cypress test runner with device ie web or mobile:
-      - **`cypress open --env device=web` for mobile `cypress open --env device=mobile`
+      - `cypress open --env device=web` 
+      - For mobile `cypress open --env device=mobile`
     
 - Run cypress tests in headless mode :
       - **`cypress run --env device=web`
@@ -26,9 +27,9 @@
 ##  Understanding code structure
 :file_folder: Tests location `cypress/integration` folder
 
-:file_folder: Custom commands are located in `cypress/support` folder
+:file_folder: Custom commands location `cypress/support` folder
 
-:file_folder: POM(Page object model) pages are located in `cypress/pages` folder 
+:file_folder: POM (Page object model) pages are located in `cypress/pages` folder 
 
 #### Cypress Configuration
 
@@ -36,7 +37,7 @@ By default tests will be executed in desktop on `1280 * 800` if device is not pa
 
     **`cypress open --env device=web viewportWidth=1200 viewportHeight=800` 
 
-Similarly otehr configuration will drive the execution as defined in `cypress.json` 
+Similarly configuration will drive the test execution as defined in `cypress.json` 
 
 ```
 {
