@@ -1,16 +1,15 @@
-# **Demo** E2E test with Cypress
+# **Cypress E2E tests Demo**
 
 ## Features
 - Cypress Framework
 - Test runner using mocha 
 - POM(Page Object Model) design
 - Supports multiple viewports (mobile and desktop). 
-- Reuseable code and fucntionality implementation
-- Reporting using Allure reports
+- Reporting using Allure report lib
 
 ## Setup
 
-1. `git clone `
+1. `git clone https://github.com/Sumit-Soman/cypress-demo`
 2. `cd cypress-demo`  
 3. `npm install` or `npm i`
 
@@ -33,9 +32,9 @@
 
 #### Cypress Configuration
 
-By default tests will be executed in desktop on `1280 * 800` if device is not passed. We can change the resolution by passing `viewportWidth` and  `viewportHeight` as env parameter in the cli as below
+By default tests will be executed in desktop with resolution `1280 * 800` (provided env device is not passed). We can change the resolution by passing `viewportWidth` and  `viewportHeight` as env parameter in the cli as below
 
-    **`cypress open --env device=web viewportWidth=1200 viewportHeight=800` 
+    `cypress open --env device=web viewportWidth=1200 viewportHeight=800` 
 
 Similarly configuration will drive the test execution as defined in `cypress.json` 
 
